@@ -29,6 +29,27 @@ This project uses OpenAI's **GPT-4o** to classify images of construction sites i
 
 ## **📂 Project Structure**
 ```console
-foo@bar:~$ whoami
-foo
+/clip-uniformat/
+│── src                   # Folder with code
+│ │── df_hf.py            # Script to create dataset and push to HF  
+│ │── gpt_captions.py     # Script to create GPT captions to images
+│ │── gpt_filter.py       # Script to use GPT to distinguish construction images
+│ │── image_processing.py # Helper functions for OpenAI API
+│ │── isolate_images.py   # Script to use the output of gpt_filter.py to drop all non-construction images
+│ │── utils.py            # Other helper functions
+│── image_processing.py   # Functions for encoding and processing images
+│── requirements.txt      # List of dependencies
+│── README.md             # Documentation
+```
+## **⚙️ Installation**
+### Set up OpenAI API Key
+
+### **Create a `config.py` File**
+In the root directory of your project, create a file named **`config.py`** and add the following code:
+
+```python
+from openai import OpenAI
+
+API_KEY = "your-api-key-here"
+client = OpenAI(api_key=API_KEY)
 ```
