@@ -1,5 +1,5 @@
-# **🏗️ Uniformat Image Classifier**
-**Automatically classifies construction images into Uniformat categories using OpenAI's GPT-4o.**  
+# **🏗️ CLIP fine tuning for Uniformat**
+**Finetune CLIP on for atuomatic classification of construction images into Uniformat categories using OpenAI's GPT-4o.**  
 
 ---
 
@@ -17,7 +17,7 @@
 ---
 
 ## **📌 Overview**
-This project uses OpenAI's **GPT-4o** to classify images of construction sites into **Uniformat** categories. The model analyzes an image and assigns the most appropriate category from a predefined set of construction-related classifications.
+This project uses OpenAI's **GPT-4o** to classify images of construction sites into **Uniformat** categories. The model analyzes an image and assigns the most appropriate category from a predefined set of construction-related classifications. These images are then used to finetune **CLIP**. The dataset can be found in the Gradient Spaces Hugging Face page [here](https://huggingface.co/datasets/gradient-spaces/uniformat-dataset). 
 
 **💡 Key Features:**
 - Uses **GPT-4o** for image classification  
@@ -28,3 +28,7 @@ This project uses OpenAI's **GPT-4o** to classify images of construction sites i
 ---
 
 ## **📂 Project Structure**
+```console
+foo@bar:~$ whoami
+foo
+```
