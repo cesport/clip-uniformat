@@ -7,11 +7,8 @@
 - [📌 Overview](#-overview)
 - [📂 Project Structure](#-project-structure)
 - [⚙️ Installation](#️-installation)
-- [🚀 Usage](#-usage)
 - [📊 Output Format](#-output-format)
-- [🔧 Configuration](#-configuration)
 - [📌 To-Do & Improvements](#-to-do--improvements)
-- [🤝 Contributing](#-contributing)
 - [📜 License](#-license)
 
 ---
@@ -53,3 +50,29 @@ from openai import OpenAI
 API_KEY = "your-api-key-here"
 client = OpenAI(api_key=API_KEY)
 ```
+
+---
+
+## **📊 Output Format**
+The output file (output/results.txt) will contain entries in the format:
+```console
+A1010, Standard Foundations, image1.jpg
+B1020, Roof Construction, image2.jpg
+D5010, Electrical Service & Distribution, image3.jpg
+```
+Each line corresponds to:
+```css
+[Uniformat Code], [Category Name], [Image Filename]
+```
+
+---
+
+## **📌 To-Do & Improvements**
+✅ Modular approach to image processing
+✅ Dataset complete with MIT Dataset
+🔲 Expand dataset
+🔲 Finetune CLIP
+
+---
+## **📜 License**
+This project is licensed under the MIT License.
