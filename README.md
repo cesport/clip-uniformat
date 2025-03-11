@@ -1,5 +1,5 @@
 # **🏗️ CLIP fine tuning for Uniformat**
-**Finetune CLIP on for atuomatic classification of construction images into Uniformat categories using OpenAI's GPT-4o.**  
+**Finetune CLIP on for automatic classification of construction images into Uniformat categories using OpenAI's GPT-4o.**  
 
 ---
 
@@ -34,7 +34,6 @@ This project uses OpenAI's **GPT-4o** to classify images of construction sites i
 │ │── image_processing.py # Helper functions for OpenAI API
 │ │── isolate_images.py   # Script to use the output of gpt_filter.py to drop all non-construction images
 │ │── utils.py            # Other helper functions
-│── image_processing.py   # Functions for encoding and processing images
 │── requirements.txt      # List of dependencies
 │── README.md             # Documentation
 ```
@@ -68,11 +67,12 @@ Each line corresponds to:
 ---
 
 ## **📌 To-Do & Improvements**
-✅ Modular approach to image processing
-✅ Dataset complete with MIT Dataset
-🔲 Expand dataset
+✅ Modular approach to image processing\
+✅ Dataset complete with MIT Dataset\
+🔲 Expand dataset\
 🔲 Finetune CLIP
 
 ---
+
 ## **📜 License**
 This project is licensed under the MIT License.
